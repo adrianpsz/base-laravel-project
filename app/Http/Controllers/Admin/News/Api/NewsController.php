@@ -4,12 +4,14 @@ namespace App\Http\Controllers\Admin\News\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\News;
+use App\Traits\ApiUtils;
 use Illuminate\Http\JsonResponse;
 use function __;
-use function response;
 
 class NewsController extends Controller
 {
+    use ApiUtils;
+
     /**
      * @param News $news
      *
@@ -17,15 +19,20 @@ class NewsController extends Controller
      */
     public function toggleActivation(News $news): JsonResponse
     {
-        if ($news->is_active == 1)
+        if ($news->is_active == 1) {
             $news->is_active = 0;
-        else
+        } else {
             $news->is_active = 1;
+        }
         $news->save();
 
-        return response()->json([
-            'message' => __('The news has been activated.'),
-            'active' => $news->is_active,
-        ]);
+        return $this->successMessageWithData(
+            $news->is_active ?
+                __('The news ":title" has been activated.', ['title' => $news->title]) :
+                __('The news ":title" has been deactivated.', ['title' => $news->title])
+            , [
+                'active' => $news->is_active
+            ]
+        );
     }
 }
