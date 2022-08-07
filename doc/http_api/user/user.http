@@ -1,0 +1,4 @@
+POST {{host}}/api/home/users/show
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}

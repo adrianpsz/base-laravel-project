@@ -1,0 +1,4 @@
+DELETE {{host}}/api/home/images/30
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}

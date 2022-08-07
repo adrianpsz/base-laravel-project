@@ -1,0 +1,26 @@
+POST {{host}}/api/home/news/17
+Accept: application/json
+Content-Type: multipart/form-data; boundary=boundary
+Authorization: Bearer {{token}}
+
+--boundary
+Content-Disposition: form-data; name="_method"
+Content-Type: text/plain
+
+PUT
+--boundary
+Content-Disposition: form-data; name="title"
+Content-Type: text/plain
+
+API Test 2
+--boundary
+Content-Disposition: form-data; name="message"
+Content-Type: text/plain
+
+API Test message
+--boundary
+Content-Disposition: form-data; name="images[]"; filename="02.jpg"
+Content-Type: image/jpeg
+
+< ./02.jpg
+--boundary

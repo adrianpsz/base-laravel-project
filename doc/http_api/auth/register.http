@@ -1,0 +1,14 @@
+POST {{host}}/api/auth/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "{{name}}",
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "password_confirmation": "{{password}}",
+  "device_name": "{{deviceName}} ",
+  "terms": 1
+}
+
+###

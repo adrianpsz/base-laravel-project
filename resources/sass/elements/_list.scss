@@ -1,0 +1,13 @@
+ul {
+  li {
+    .active {
+      font-weight: bold;
+    }
+  }
+
+  &.home-menu-list {
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+POST {{host}}/api/news
+Accept: application/json
+Content-Type: application/json
+

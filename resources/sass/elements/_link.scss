@@ -1,0 +1,16 @@
+a {
+  // display
+  outline: none !important;
+  color: $color1;
+  //font-weight: 600;
+  display: inline-block;
+  text-decoration: none !important;
+
+  &:hover {
+    color: $color2;
+  }
+
+  &:visited, &:active, &:focus {
+    text-decoration: none !important;
+  }
+}

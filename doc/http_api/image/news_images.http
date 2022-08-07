@@ -1,0 +1,4 @@
+POST {{host}}/api/home/images/news/19
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}

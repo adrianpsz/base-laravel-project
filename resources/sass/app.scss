@@ -1,0 +1,16 @@
+// Variables
+@import 'variables';
+
+// Fontawesome
+@import "fontawesome/fontawesome";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "elements/elements";
+@import "sections/sections";
+
+body {
+  font-family: $font-family-header;
+  color: $color1;
+}

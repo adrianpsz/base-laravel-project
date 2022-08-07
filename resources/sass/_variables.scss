@@ -1,0 +1,31 @@
+$mainFont: 'Open+Sans';
+$headerFont: 'Montserrat';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=#{$mainFont}:400,700');
+@import url('https://fonts.googleapis.com/css?family=#{$headerFont}:400,700');
+
+// Body
+$body-bg: #ffffff;
+
+// Typography
+$font-family-sans-serif: $mainFont, sans-serif;
+$font-family-header: $headerFont, sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors$
+$blue: #76addc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #ffab53;
+$yellow: #ffed4a;
+$green: #08b135;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+// palette
+$color1: darken($blue, 90);
+$color2: $blue;

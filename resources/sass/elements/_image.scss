@@ -1,0 +1,104 @@
+.image-browser {
+  position: relative;
+  border: 5px solid white;
+  box-shadow: 0 0 5px #aaa;
+  text-align: center;
+
+  img {
+  }
+
+  .ib-button {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+    }
+
+    i {
+      color: white;
+    }
+
+    &.ib-button-next {
+      right: 0;
+    }
+
+    &.ib-button-prev {
+      left: 0;
+    }
+  }
+}
+
+.update-images {
+
+  .ui-wrapper {
+    width: 100%;
+    position: relative;
+
+    .ui-toolbar {
+      position: absolute;
+      bottom: 0.2rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+
+      &.ui-loading {
+        background: rgba(0, 0, 0, 0.5);
+
+        i {
+          color: white;
+        }
+      }
+
+      .ui-b {
+        display: inline-block;
+        padding: 0.1rem 0.3rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        line-height: 1.1rem;
+
+        &.ui-b-remove {
+          background: $red;
+
+          &:hover {
+            background: $pink;
+          }
+
+          i {
+            color: white;
+            font-size: 0.7rem;
+          }
+        }
+
+        &.ui-b-move {
+          background: rgba(0, 0, 0, 0.1);
+          border: 1px solid white;
+
+          &:hover {
+            background: rgba(0, 0, 0, 0.5);
+          }
+
+          i {
+            color: white;
+            font-size: 0.7rem;
+          }
+
+          &.ui-b-m-left {
+            margin-right: 0.3rem;
+          }
+          &.ui-b-m-right {
+            margin-left: 0.3rem;
+          }
+        }
+      }
+    }
+  }
+}

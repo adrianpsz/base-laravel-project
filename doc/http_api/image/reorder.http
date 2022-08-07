@@ -1,0 +1,4 @@
+PUT {{host}}/api/home/images/reorder/34/35
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}

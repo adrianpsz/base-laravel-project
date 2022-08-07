@@ -1,0 +1,9 @@
+POST {{host}}/api/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "device_name": "{{deviceName}}"
+}
