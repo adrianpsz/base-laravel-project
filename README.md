@@ -6,3 +6,8 @@ https://base-laravel-project.adrianp.pl/
 
 Email: *user@demo.com*\
 Password: *test1234*
+
+---
+Visit my website
+
+[adrianp.pl](https://adrianp.pl/)
