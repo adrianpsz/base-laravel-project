@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Jobs\NewUserHasSignedUpJob;
 use App\Mail\ApiForgotYourPasswordMail;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
@@ -65,6 +66,8 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'terms' => 1
         ]);
+
+        $this->dispatch(new NewUserHasSignedUpJob($user));
 
         return $user->createToken($request->device_name)->plainTextToken;
     }
