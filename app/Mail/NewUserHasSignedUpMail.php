@@ -36,7 +36,8 @@ class NewUserHasSignedUpMail extends Mailable
             ->with([
                 'id' => $this->user->id,
                 'name' => $this->user->name,
-                'email' => $this->user->email
+                'email' => $this->user->email,
+                'ip' => request()->ip()
             ]);
     }
 }

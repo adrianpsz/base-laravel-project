@@ -9,7 +9,8 @@
 New User [
 <small>id:</small> {{$id}},
 <small>name:</small> {{ $name }},
-<small>email:</small> {{ $email }}
+<small>email:</small> {{ $email }},
+<small>ip:</small> {{ $ip }}
 ] has signed up.
 </body>
 </html>
